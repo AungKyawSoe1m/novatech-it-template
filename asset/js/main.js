@@ -1,5 +1,7 @@
 $(document).ready(function () {
-
+  $("#preloader").fadeOut("slow", function () {
+    $(this).remove();
+  });
   $(".navbar-nav .nav-link").click(function () {
     $(".navbar-nav .nav-link").removeClass("active");
     $(this).addClass("active");
